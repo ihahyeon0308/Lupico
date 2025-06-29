@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+      }
+      input,
+      button,
+      select {
+        font-size: 16px;
+      }
+      #result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script type="module" src="/main.js"></script>
+    <h1>Random Number Game</h1>
+
+    <label for="maxNumber">Generate a number between 0 and </label>
+    <input type="number" id="maxNumber" min="1" placeholder="Enter max value" />
+    <br /><br />
+
+    <label for="userGuess">Guess the number:</label>
+    <input type="number" id="userGuess" disabled />
+    <button id="playButton" disabled>Play!</button>
+
+    <p id="result"></p>
+  </body>
+</html>
